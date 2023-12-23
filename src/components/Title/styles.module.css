@@ -21,3 +21,18 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
+@media screen and (max-width: 375px)  {
+
+    .container {
+        display: flex;
+        width: 347px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+
+}

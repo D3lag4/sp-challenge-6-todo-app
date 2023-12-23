@@ -4,6 +4,25 @@
     height: 100vh;
 }
 
+
+.darkImg {
+    background-image: url('/images/bg-desktop-dark.jpg');
+    width: 1440px;
+    height: 300px;
+    z-index: 0;
+    position: absolute;
+}
+
+.lightImg {
+    background-image: url('/images/bg-desktop-light.jpg');
+    width: 1440px;
+    height: 300px;
+    z-index: 0;
+    position: absolute;
+}
+
+
+
 .dark {
     background-color: hsl(235, 21%, 11%);
 }
@@ -40,3 +59,58 @@
 .lightFooter {
     background-color: white;
 }
+
+
+@media screen and (max-width: 375px)  {
+
+    .layout {
+        max-width: 375px;
+        margin: 0 auto;
+        height: 730px;
+     
+    }
+    
+    .dark {
+        background-color: hsl(235, 21%, 11%);
+    }
+    
+    .light {
+        background-color: hsl(0, 0%, 98%);
+    }
+    
+    .darkImg {
+        background-image: url('/images/bg-mobile-dark.jpg');
+        width: 375px;
+        height: 200px;
+    }
+    .lightImg {
+        background-image: url('/images/bg-mobile-light.jpg');
+        width: 375px;
+        height: 200px;
+    }
+    
+    .content {
+        padding-top: 100px;
+    }
+    
+    .footer {
+        width: 327px;
+        height: 48px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        background-color: hwb(235 15% 76%);
+        justify-content: space-between;
+        align-items: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    
+}
+
+
+
+
+
+    
